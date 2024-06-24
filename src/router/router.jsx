@@ -9,8 +9,7 @@ import NavBar from "../components/navbar/navbar";
   
   export default function Router() {
     return (
-      <BrowserRouter basename="https://Agustin-Lovera04.github.io/PortFolio_Lovera">
-        <Routes>
+<BrowserRouter basename="/PortFolio_Lovera">        <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobremi" element={<Index />} />
           <Route path="/proyectos" element={<Index />} />
