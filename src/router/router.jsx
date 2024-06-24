@@ -9,7 +9,7 @@ import NavBar from "../components/navbar/navbar";
   
   export default function Router() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobremi" element={<Index />} />
