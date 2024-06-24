@@ -9,7 +9,7 @@ import NavBar from "../components/navbar/navbar";
   
   export default function Router() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename="https://Agustin-Lovera04.github.io/PortFolio_Lovera">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobremi" element={<Index />} />
