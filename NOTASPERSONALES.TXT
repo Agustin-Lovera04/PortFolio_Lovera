@@ -1,0 +1,14 @@
+Css clases normalizar general
+
+Controlar CSS que no haya valores fijos
+
+-ARREGLAR ROUTER
+
+AOS ANIMACIONES ()
+
+RESPONSIVE CHICO
+- BUBLCLE DE CONOCIMINETOS
+-MAIN
+
+-TOdos los JSX protocolizados con bootstrap
+-RESPONSIVE

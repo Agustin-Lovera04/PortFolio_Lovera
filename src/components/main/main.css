@@ -1,0 +1,272 @@
+
+.neon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  font-family: Grandslang, sans-serif;
+  flex-grow: 1;
+  margin: 4em;
+}
+
+.neon-text {
+  font-size: 6vw;
+  color: #0080FF; /* Cambiar el color del texto a un azul más intenso */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 5px #0080FF, 0 0 10px #0080FF, 0 0 15px #0080FF, 0 0 20px #0080FF, 0 0 30px #0080FF;
+  animation: neonFlicker 5s infinite;
+}
+
+
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 10px #0080FF, 0 0 20px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF, 0 0 160px #0080FF;
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    opacity: 0.5;
+  }
+}
+
+.neon-text::after {
+  content: 'AGUSTIN LOVERA \ PROGRAMADOR JR';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 90%;
+  font-size: 4vw;  /* Ajuste relativo al ancho del viewport */
+  transform: translateX(-50%) rotateX(180deg);
+  color: #0080FF;
+  opacity: 0.3;
+  filter: blur(4px);
+  z-index: 0;
+  animation: reflectionFlicker 2s infinite;
+}
+
+@keyframes reflectionFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 0.3;
+  }
+  20%, 24%, 55% {
+    opacity: 0.1;
+  }
+}
+
+
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.main__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/backImg.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* La imagen de fondo permanece fija al hacer scroll */
+  background-repeat: no-repeat; /* La imagen no se repite */
+  height: auto;
+  min-height: 95vh;
+}
+
+.btn--Main__Container {
+  padding-top: 2em;
+  margin-top: 3em;
+}
+
+.tt--img {
+  color: white;
+}
+
+/* Icono de scroll responsivo */
+.scroll-button {
+  margin-top: 3.5vw;  /* Ajuste relativo al ancho del viewport */
+  position: relative;
+  width: 2.5vw;  /* Ajuste relativo al ancho del viewport */
+  height: 7vw;  /* Ajuste relativo al ancho del viewport */
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.scroll-circle {
+  position: absolute;
+  width: 1vw;  /* Ajuste relativo al ancho del viewport */
+  height: 1vw;  /* Ajuste relativo al ancho del viewport */
+  background-color: white;
+  border-radius: 50%;
+  animation: scrollAnimation 2s infinite;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    top: 2vw;  /* Ajuste relativo al ancho del viewport */
+    opacity: 0;
+  }
+  50% {
+    top: 4vw;  /* Ajuste relativo al ancho del viewport */
+    opacity: 1;
+  }
+  100% {
+    top: 6vw;  /* Ajuste relativo al ancho del viewport */
+    opacity: 0;
+  }
+}
+
+.scroll-arrow {
+  margin: 5%;  /* Ajuste relativo al ancho del viewport */
+  width: 0;
+  height: 0;
+  border-left: 0.7vw solid transparent;
+  border-right: 0.7vw solid transparent;
+  border-top: 1vw solid white;
+}
+
+
+
+
+/* Media Queries para ajustes adicionales */
+@media (max-width: 768px) {
+  .navbar-container {
+    height: auto;
+  }
+
+  .bg-img {
+    height: 60vh;
+  }
+  .subTT--Main{
+    font-size:.4em
+  }
+
+  .main__Container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .neon-text{
+    font-size: 10vw;
+  }
+  .neon-text::after{
+    font-size:6vw;
+  }
+  .scroll-button{
+    width: 4.5vw;
+    height: 6.5vh;
+  }
+  .scroll-circle{
+    height: 2vh;
+    width:2vw;
+  }
+  .scroll-arrow {
+    border-left: 2vw solid transparent;  /* Aumentar tamaño */
+    border-right: 2vw solid transparent;  /* Aumentar tamaño */
+    border-top: 2.5vw solid white;  /* Aumentar tamaño */
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    height: auto;
+  }
+  .subTT--Main{
+    font-size:.4em
+  }
+
+  .bg-img {
+    height: 70vh;
+  }
+  .neon-text{
+    font-size: 10vw;
+  }
+  .neon-text::after{
+    font-size:6vw;
+  }
+  .scroll-button{
+    width: 4.5vw;
+    height: 6.5vh;
+  }
+  .scroll-circle{
+    height: 2vh;
+    width:2vw;
+  }
+  .scroll-arrow {
+    border-left: 1.5vw solid transparent;  /* Aumentar tamaño */
+    border-right: 1.5vw solid transparent;  /* Aumentar tamaño */
+    border-top: 2vw solid white;  /* Aumentar tamaño */
+  }
+  
+}
+
+@media (min-width: 2000px) {
+  .container {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .subTT--Main{
+    font-size:.4em
+  }
+
+  .bg-img {
+    height: 100vh;
+    background-position: center;
+  }
+
+  .tt--img {
+    font-size: 4vw;
+  }
+
+  .btn--Hover__Main {
+    font-size: 2vw;
+    padding: 1.5rem 3rem;
+  }
+
+}
+
+@media (min-width: 3000px) {
+  .container {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+  .subTT--Main{
+    font-size:.4em
+  }
+
+  .tt--img {
+    font-size: 3vw;
+  }
+
+  .btn--Hover__Main {
+    font-size: 1.5vw;
+    padding: 2vw 4vw;
+  }
+
+  .img__Content {
+    padding: 4vw;
+  }
+  .neon-text{
+    font-size: 6.8vw;
+  }
+
+}

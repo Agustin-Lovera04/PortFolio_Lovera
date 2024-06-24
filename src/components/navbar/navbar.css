@@ -1,0 +1,287 @@
+.navbar {
+    background: linear-gradient(to bottom, #1D1D1D 15%, rgba(29, 28, 27, 0) 100%); /* Gradiente transparente con el color oscuro más abajo */
+    padding: 0; /* Espacio vertical reducido */
+    height: 10vw;
+}
+
+.navbar-brand {
+    margin-right: 1% /* Reducir margen derecho del logo */
+}
+
+.navbar-nav {
+    align-items: center;
+    padding: 1%;
+}
+
+.nav-link {
+    font-size: 80%;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s; /* Transición para el color del texto */
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.1%; /* Posiciona el subrayado abajo de la palabra */
+    left: 50%; /* Centra el inicio del subrayado */
+    width: 0%;
+    height: 5%; /* Grosor del subrayado */
+    background-color: #2272FF; /* Color del subrayado */
+    transition: width 0.5s, left 0.5s, background-color 0.5s; /* Transición para la expansión, posición y color del subrayado */
+}
+
+.nav-link:hover {
+    color: #2272FF; /* Cambia el color del texto al hacer hover */
+}
+
+.nav-link:hover::before {
+    width: 100%; /* Ancho completo al hacer hover */
+    left: 0; /* Posición inicial del subrayado al hacer hover */
+}
+
+
+.logo--Nav__Style {
+    width: 100%;
+    height: auto; /* Añade un poco de espacio alrededor del logo */
+  }
+
+.logo--btn{
+    width: 15vw;
+    height: auto;
+    background-color: transparent;
+    border: none;
+}
+/* Ajuste del tamaño de las imágenes de las banderas */
+.flags {
+    width: 90%;
+    height: 90%;
+}
+
+/* Ajuste del tamaño y margen de los ítems del desplegable */
+.dropdown-menu .dropdown-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: auto;
+}
+
+/* Ajuste del tamaño de la lista desplegable */
+.dropdown-menu {
+    min-width: auto; /* Ancho mínimo ajustado automáticamente al contenido */
+}
+
+.p-dropdown-item{
+    font-size: 50%;
+    color: white;
+    background-color: red;
+}
+
+/* Media Queries para estilos responsivos */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+    .navbar-collapse{
+        display: flex;
+        justify-content: center !important;
+    }
+    .navbar-nav{
+        width: 20%;
+        height: 20%;
+    }
+
+    .logo--btn{
+        width: 35vw;
+        height: auto;
+    }
+    .navbar-toggler-icon {
+        background-image: url('/images/menu.png') !important;
+        opacity: 70%;
+      }
+      
+    .bg-img {
+        background-position: center; /* Centrado para pantallas más pequeñas */
+        height: 70vh; /* Reducir la altura */
+    }
+
+    .main__Container {
+        justify-content: center; /* Centrado para pantallas más pequeñas */
+        align-items: center;
+    }
+
+    .img__Content {
+        padding: 2%; /* Reducir el padding */
+    }
+
+    .btn--Hover__Main {
+        padding: 2%;
+    }
+        .flags {
+        width: 4rem; /* Ajusta el tamaño de las banderas */
+        height: auto;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: .8em; /* Ajusta el tamaño de la fuente en el menú desplegable */
+    }
+
+    .dropdown-menu {
+        min-width: 5rem; /* Ajusta el ancho mínimo del menú desplegable */
+    }
+        .p-dropdown-item{
+        font-size: 100%;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (móviles pequeños) */
+@media (max-width: 480px) {
+    .navbar {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+     .logo--btn{
+        width: 35vw;
+        height: auto;
+    }
+    .navbar-toggler-icon {
+        background-image: url('/images/menu.png') !important;
+        opacity: 70%;
+      }
+    .bg-img {
+        height: 50vh; /* Reducir aún más la altura */
+    }
+
+    .btn--Hover__Main {
+        padding: 1%;
+    }
+        .flags {
+        width: 4rem; /* Ajusta el tamaño de las banderas */
+        height: auto;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: .8em; /* Ajusta el tamaño de la fuente en el menú desplegable */
+    }
+
+    .dropdown-menu {
+        min-width: 5rem; /* Ajusta el ancho mínimo del menú desplegable */
+    }
+        .p-dropdown-item{
+        font-size: 100%;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 1200px (pantallas grandes) */
+@media (min-width: 2000px) {
+    .navbar {
+        min-height: 20vh;
+        height: auto; /* Ajusta la altura de la barra de navegación */
+    }
+
+    .navbar-brand {
+        margin-right: 2%; /* Incrementa el margen derecho del logo */
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+    }
+
+    .nav-link::before {
+        height: 3px; /* Ajusta el grosor del subrayado */
+    }
+
+    .logo--Nav__Style {
+        width: 100%;
+        height: auto; /* Añade un poco de espacio alrededor del logo */
+        padding: 4%;
+    }
+
+    .logo--btn {
+        width: 20vw;
+        height: auto;
+    }
+
+    .flags {
+        width: 1.5rem; /* Ajusta el tamaño de las banderas */
+        height: auto;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: 1rem; /* Ajusta el tamaño de la fuente en el menú desplegable */
+    }
+
+    .dropdown-menu {
+        min-width: 10rem; /* Ajusta el ancho mínimo del menú desplegable */
+    }
+
+    /* Añade más espacio entre los enlaces de navegación en pantallas grandes */
+    .nav-item {
+        margin: 0 20px; /* Aumenta el margen para pantallas grandes */
+    }
+    .p-dropdown-item{
+        font-size: 100%;
+    }
+}
+
+/* Estilos para resoluciones extremadamente altas como 4K (mínimo 3840px) */
+@media (min-width: 3000px) {
+    .navbar {
+        min-height: 20vh;
+        height: auto; /* Ajusta la altura de la barra de navegación */
+    }
+
+    .navbar-brand {
+        margin-right: 1%; /* Ajusta el margen derecho del logo */
+    }
+
+    .navbar-nav {
+        align-items: center;
+        padding: 2%;
+    }
+
+    .nav-link {
+        font-size: 4rem; /* Aumenta el tamaño de la fuente */
+    }
+
+    .nav-link::before {
+        height: 7px; /* Ajusta el grosor del subrayado */
+    }
+
+    .logo--Nav__Style {
+        width: 100%;
+        height: auto; /* Añade un poco de espacio alrededor del logo */
+        padding: 4%;
+    }
+
+    .logo--btn {
+        width: 20vw;
+        height: auto;
+    }
+
+    .flags {
+        width: 5rem; /* Ajusta el tamaño de las banderas */
+        height: auto;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: 2.2rem; /* Ajusta el tamaño de la fuente en el menú desplegable */
+    }
+
+    .dropdown-menu {
+        min-width: 20rem; /* Ajusta el ancho mínimo del menú desplegable */
+    }
+    .p-dropdown-item{
+        font-size: 100%;
+    }
+}

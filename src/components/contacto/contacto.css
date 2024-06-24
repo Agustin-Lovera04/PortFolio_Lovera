@@ -1,0 +1,129 @@
+.contacto__Container {
+  background-color: black;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+  } 
+  .tt--Contacto {
+  font-size: 4vw;
+  padding: 1.5%;
+  margin: 0;
+}
+
+.stt--Contacto {
+  font-size: 3vw;
+  padding: 1.5%;
+  color: #2272FF;
+}
+
+.arrow--Contacto {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  height: min-content;
+}
+
+.arrow--IMG {
+  padding: 0;
+  margin: 0;
+}
+
+.btn--contacto__Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+}
+
+.btn--Hover__Contacto {
+  padding: 2% 4%;
+  background: #2272FF;
+  margin: 1%;
+  color: white;
+  border: 2px solid #2272FF;
+  border-radius: 0.625em;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.btn--Hover__Contacto:hover {
+  color: #2272FF;
+  background: white;
+}
+
+.btn--Hover__Contacto:after {
+  content: "";
+  background: black;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: transform 0.5s;
+}
+
+.btn--Hover__Contacto:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+}
+
+
+/* Media Queries para estilos responsivos */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+  .contacto__Container{
+    display: flex;
+    justify-content: flex-start;
+  min-height: 50vh;
+
+  }
+ .stt--Contacto{
+  font-size: 10vw;
+ }
+.tt--Contacto{
+  font-size: 7vw;
+  padding: 5%;
+} 
+  }
+  
+  /* Estilos para dispositivos con un ancho máximo de 480px (móviles pequeños) */
+  @media (max-width: 480px) {
+    .contacto__Container{
+      display: flex;
+      justify-content: flex-start;
+  min-height: 50vh;
+
+    }
+     .stt--Contacto{
+      font-size: 10vw;
+     }
+.tt--Contacto{
+  font-size: 7vw;
+  padding: 5%;
+} 
+  }
+
+  /* Media query para resoluciones grandes */
+@media (min-width: 2000px) {
+.btn--Hover__Contacto{
+  font-size: 3.5em;
+}
+}
+
+@media (min-width: 3000px) {
+.btn--Hover__Contacto{
+  font-size: 3.5em;
+}
+}

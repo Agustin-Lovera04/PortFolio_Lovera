@@ -1,0 +1,110 @@
+.conocimientos__Container {
+  background-color: black;
+  height: auto;
+  min-height: 95vh;
+}
+
+.tt--Conocimientos {
+  font-size: 5vw;
+}
+
+.btn--Hover__Conocimientos {
+padding: 1.5% 4.5%;
+background: #2272FF;
+color: white;
+border: 2px solid #2272FF; /* Ajusta el borde para que sea visible */
+border-radius: 0.625em;
+font-weight: bold;
+font-size: larger;
+cursor: pointer;
+position: relative;
+z-index: 1;
+overflow: hidden;
+}
+
+.btn--Hover__Conocimientos:hover {
+color: #2272FF;
+background: white; /* Cambia el fondo a blanco al pasar el ratón */
+transition: all 0.5s;
+}
+
+.btn--Hover__Conocimientos:after {
+content: "";
+background: black;
+position: absolute;
+z-index: -1;
+left: -20%;
+right: -20%;
+top: 0;
+bottom: 0;
+transform: skewX(-45deg) scale(0, 1);
+transition: all 0.5s;
+}
+
+.btn--Hover__Conocimientos:hover:after {
+transform: skewX(-45deg) scale(1, 1);
+transition: all 0.5s;
+}
+
+hr {
+  border: none; /* Eliminar el borde predeterminado */
+  height: 2px; /* Ajustar el grosor */
+  background: radial-gradient(circle, #2272FF, #000); /* Gradiente radial del azul al negro */
+  margin: 2rem 0; /* Espaciado superior e inferior */
+  opacity: 0.8; /* Hacerlo ligeramente translúcido */
+}
+
+
+/* Media Queries para estilos responsivos */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+.btn--Hover__Conocimientos{
+  padding: 3%;
+  font-size: 90%;
+}
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  .btn--Hover__Conocimientos{
+    padding: 3%;
+    font-size: 90%;
+}
+}
+
+   /* Estilos para dispositivos con un ancho mínimo de 1200px (pantallas grandes) */
+   @media (min-width: 2000px) {
+    .btn--Hover__Conocimientos{
+      padding: 1%;
+      font-size: 5rem;
+  }
+
+  hr{
+  height: 10%; /* Ajustar el grosor */
+  background: radial-gradient(circle, #2272FF, #000); /* Gradiente radial del azul al negro */
+  margin: 4rem 0; /* Espaciado superior e inferior */
+  opacity: 0.8; /* Hacerlo ligeramente translúcido */
+  }
+  .conocimientos__dinamicContent{
+    height: min-content;
+  }
+    }
+    
+    /* Estilos para resoluciones extremadamente altas como 4K (mínimo 3840px) */
+    @media (min-width: 3000px) {
+      .btn--Hover__Conocimientos{
+        padding: 1%;
+        font-size: 5rem;
+    }
+
+    hr{
+  height: 10%; /* Ajustar el grosor */
+  background: radial-gradient(circle, #2272FF, #000); /* Gradiente radial del azul al negro */
+  margin: 4rem 0; /* Espaciado superior e inferior */
+  opacity: 0.8; /* Hacerlo ligeramente translúcido */
+    }
+    .conocimientos__dinamicContent{
+      height: min-content;
+    }
+    }

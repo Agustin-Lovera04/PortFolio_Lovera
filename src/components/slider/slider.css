@@ -1,0 +1,94 @@
+.slider {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden; /* Asegúrate de ocultar el desbordamiento */
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    width: calc(100% * 2); /* Ajusta este valor según el número de imágenes duplicadas */
+}
+
+.slider .slide {
+    width: calc(100% / 20); /* Ajusta este valor según el número total de imágenes */
+}
+
+.img-Slider {
+    width: 100%;
+    transition: transform 0.3s ease; /* Añadimos una transición suave */
+    padding: 10%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-50%); /* Ajusta este valor según el número de imágenes visibles */
+        transform: translateX(-50%);
+    }
+}
+
+.slider:hover .slide-track {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+.img-Slider:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+.logo-title {
+    margin-top: 2%;
+    font-size: 100%;
+    color: white;
+    text-align: center;
+}
+
+
+/* Media Queries para estilos responsivos */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+    .slide{
+      padding: .1%;
+    }
+    .logo-title{
+        font-size: 45%;
+    }
+    }
+    
+    /* Estilos para dispositivos con un ancho máximo de 480px (móviles pequeños) */
+    @media (max-width: 480px) {
+    .slide{
+      padding: .1%;
+    }
+    .logo-title{
+        font-size: 45%;
+    }
+    }
+
+    /* Estilos para dispositivos con un ancho mínimo de 1200px (pantallas grandes) */
+@media (min-width: 2000px) {
+.logo-title {
+    margin-top: 2%;
+    font-size: 2.3rem;
+    color: white;
+    text-align: center;
+}
+}
+
+/* Estilos para resoluciones extremadamente altas como 4K (mínimo 3840px) */
+@media (min-width: 3000px) {
+.logo-title {
+    margin-top: 2%;
+    font-size: 3.8rem;
+    color: white;
+    text-align: center;
+}
+}

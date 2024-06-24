@@ -1,0 +1,68 @@
+.proyectos__Container {
+  background-color: #1D1D1D;
+  height: auto;
+  min-height: 95vh;
+}
+
+.cards__Container {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 80%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+
+.btn--card__Proyectos{
+  padding:4%;
+}
+
+.card {
+  width: 30%; /* Porcentaje para el ancho de la card */
+  min-width: 200px; /* Tamaño mínimo en píxeles */
+  height: auto; /* Se ajustará automáticamente según el contenido */
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%; /* Porcentaje para el relleno interno */
+  margin: .5%;
+}
+
+.img--Card {
+  max-width: 100%; /* Imagen se ajustará al ancho de la card */
+  height: auto; /* Altura automática */
+}
+
+.title--Card {
+  margin: 0 !important;
+  text-align: center; /* Centrar el texto */
+  height: 20%;
+  font-size: 80%;
+}
+
+
+.tt--Proyectos{
+font-size: 5vw;
+}
+
+/* Media query para resoluciones grandes */
+@media (min-width: 2000px) {
+  .title--Card{
+    font-size: 3em;
+  }
+  .btn-card_Proyectos{
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 3000px) {
+  .title--Card{
+    font-size: 3em;
+  }
+  .btn-card_Proyectos{
+    font-size: 3em;
+  }
+}

@@ -1,0 +1,66 @@
+.container--Sobremi {
+    background-color: #1D1D1D;
+    padding: 4% !important;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    min-height: 95vh;
+
+}
+.content--Sobremi{
+    padding: 2%;
+    opacity: auto !important;
+}
+
+.text--SobreMi{
+    width: 50%;
+}
+
+.tt--SobreMi{
+    color: #2272FF;
+}
+
+.img--sobreMi{
+    width: 75%;
+    height: 75%;
+}
+
+/* Media Queries para estilos responsivos */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+    .text--SobreMi{
+        width: auto;
+        padding: 1%;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (móviles pequeños) */
+@media (max-width: 480px) {
+    .text--SobreMi{
+        width: auto;
+        padding: 1%;
+    }
+}
+/* Estilos para dispositivos con un ancho mínimo de 1200px (pantallas grandes) */
+@media (min-width: 2000px) {
+    .tt--SobreMi{
+        font-size: 6.5rem;
+    }
+    .text--SobreMi{
+    width: 85%;
+    font-size: 3rem;
+}
+}
+
+/* Estilos para resoluciones extremadamente altas como 4K (mínimo 3840px) */
+@media (min-width: 3000px) {
+    .tt--SobreMi{
+        font-size: 10.5rem;
+    }
+    .text--SobreMi{
+    width: 50%;
+    font-size: 3.8rem;
+}
+}

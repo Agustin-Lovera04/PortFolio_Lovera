@@ -1,0 +1,54 @@
+/* styles.css */
+
+.chrono-container .ToolbarWrapper-sc-cif21b-6 {
+    display: none;
+  }
+
+/* Media query para resoluciones grandes */
+@media (min-width: 2000px) {
+
+.gJvBnh{
+  min-height: 10vh !important;
+}
+.iRCxYP{
+  font-size: 5em !important;
+}
+
+.jHGHrJ{
+  font-size:3.5em !important;
+} 
+.gJAGSz{
+  font-size: 3.5em !important;
+}
+
+  .jaQaOm {
+    font-size: 3rem !important;
+  }
+  .gJvBnh{
+    line-height: 3.2em !important;
+  }
+}
+
+@media (min-width: 3000px) {
+
+  .gJvBnh{
+    min-height: 10vh !important;
+  }
+  .iRCxYP{
+    font-size: 5em !important;
+  }
+  
+.jHGHrJ 
+{
+  font-size:3.5em !important;
+}
+.gJAGSz{
+  font-size: 3.5em !important;
+}
+  .jaQaOm{
+    font-size: 3rem !important;
+  }
+  .gJvBnh{
+    line-height: 3.2em !important;
+  }
+}
