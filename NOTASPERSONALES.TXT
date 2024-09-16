@@ -1,8 +1,8 @@
-Css clases normalizar general
-
-Controlar CSS que no haya valores fijos
+-Css clases normalizar general
 
 -ARREGLAR ROUTER
 
--TOdos los JSX protocolizados con bootstrap
--RESPONSIVE
+-ARREGLAR DETALLES DESPUES DE DEPLOY
+
+
+-VER PQ IMAGEN DE BVZ ME GENERA PROVBLEMAS
